@@ -2,16 +2,16 @@
 
 
 function TravelCard(props){
-    console.log(props)
+   
     return(
        
         <section className='flex  px-[300px] pt-[100px] pb-[20px] items-center'>
         <div className='mr-[30px]'>
           <img src={props.imageUrl} alt="place" className="w-72 h-80 object-cover rounded" />
         </div>
-        <div className="">
+        <div >
             <div className='flex mb-[30px]'>
-              <img className='mr-[10px] ' src='images/pin.svg' alt='pin'/>
+              <img className='mr-[10px]' src='travel-journel/images/pin.svg' alt='pin'/>
               <p className='mr-[15px]'>{props.location}</p>
               <a href={props.googleMapsUrl}>View on Google Map</a>
             </div>
